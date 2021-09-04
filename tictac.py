@@ -23,12 +23,9 @@ def checkIfWon(letter):
         if not won:
             matches = 0
             matchLetter = " " + letter + " "
-            # print(i)
-            # print(matchLetter+" - "+letter)
             for x in i:
                 if values[x] == matchLetter:
                     matches += 1
-                    # print(f"matches-> {matches}")
                 else:
                     break
             if matches == 3:
